@@ -11,7 +11,7 @@ const fillTable = (data) =>{
     let html = "";
 
     data.forEach(element => {
-        html += "<div class = 'style'> <img src = '" + element.teamIconUrl+"' / <div class = 'container'><p class = 'matches'>"+element.matches+" "+element.won+" "+element.draw+" </p></div></div>"
+        html += "<div class = 'style'> <img src = '" + element.teamIconUrl+"' / <div class = 'container2'><div class = 'result'><div class = 'matches'>"+element.matches+" "+element.won+" "+element.draw+" </div></div></div></div>"
     });
     document.getElementById("output").innerHTML = html;
 }

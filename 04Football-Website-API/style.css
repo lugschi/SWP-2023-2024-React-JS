@@ -6,29 +6,45 @@ body{
     font-family: Verdana, "Lucida Sans Unicode", sans-serif
 }
 
-.style{
-    width: 100%;
-    height: 100px;
+.container {
+    background-color: purple;
+    padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+
+.titleLeft, .titleRight{
+    display: flex;
+    align-items: center;
+}
+.titleLeft .info1, .titleRight .info2 {
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+}
+
+.result{
+    background-color: lightgreen;
+}
+
+.matches{
+    width: 200px;
+    height: 20px;
+}
+
+.style{
+    background-color: green;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 img{
     width: auto;
     height: 50px;
     padding: 5px;
-}
-
-.container{
-    background-color: purple;
-    position: absolute;
-    left: 20px;
-}
-
-.matches{
-    width: 50px;
-    height: 20px;
-    background-color: green;
-
 }
