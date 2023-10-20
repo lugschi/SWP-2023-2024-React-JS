@@ -25,6 +25,28 @@ body{
     padding: 5px;
 }
 
+#container2{
+    background-color: green;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #titleRight2{
+    display: flex;
+    align-items: center;
+}
+
+ #titleRight2 #info4 {
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+}
+
+
+/*
+
 .result{
     background-color: lightgreen;
 }
@@ -48,3 +70,5 @@ img{
     height: 50px;
     padding: 5px;
 }
+
+*/

@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #181818;
+    font-family: 'Mountains of Christmas', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    margin: 20px;
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.league{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.bundesliga{
+    color: #DADADA;
+    font-size: larger;
+}
+
+.country{
+    color: #DADADA;
+    opacity: 0.5;
+    font-size: smaller;
+}
+
+.date{
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+.detailSelection{
+    font-size: smaller;
+    margin-top: 20px;
+    width: 500px;
+    height: 20px;
+    display: flex;
+    color: #DADADA;
+    opacity: 0.8;
+    justify-content: space-between;    
+}
+
+.selection:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.view{
+    margin-top: 30px;
+    display: flex;
+    width: 250px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: large;
+}
+
+.viewSelection{
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(33, 32, 32);
+}
+
+.viewSelection:hover{
+    background-color: rgb(44, 42, 42);
+}
+
+.borderline{
+    border-bottom: solid;
+    border-color: white;
+    opacity: 0.5;
+}
+
+.leagueInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 70%;
+    align-items: center;
+}
+
+.info-left{
+    width: 150px;
+    display: flex;
+    color: #DADADA;
+    opacity: 0.8;
+    justify-content: space-evenly;
+}
+
+.info-right{
+    width: 500px;
+    display: flex;
+    color: #DADADA;
+    opacity: 0.8;
+    justify-content: space-evenly;
+}
