@@ -43,7 +43,7 @@ body{
 }
 
 .detailSelection{
-    font-size: smaller;
+    font-size: small;
     margin-top: 20px;
     width: 500px;
     height: 20px;
@@ -150,4 +150,17 @@ body{
 
 .NameStyle{
     margin-left: 5px;
+}
+
+.text-button {
+    font-size: small;
+    color: #DADADA;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#showSelection{
+    color: #ffffff;
+    font-weight: bold;
 }
