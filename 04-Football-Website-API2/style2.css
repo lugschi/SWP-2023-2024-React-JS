@@ -71,8 +71,23 @@ body{
     font-weight: bold;
 }
 
-.borderline{
-    border-bottom: solid;
-    border-color: white;
-    opacity: 0.5;
+
+.box1Date{
+    margin-top: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: #807F7F;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+}
+
+.date1{
+    color: white;
+    background-color: purple;
+    width: 194px;
+    height: 24px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
 }
