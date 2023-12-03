@@ -71,23 +71,38 @@ body{
     font-weight: bold;
 }
 
-
-.box1Date{
-    margin-top: 5px;
-    height: 50px;
-    width: 100%;
-    background-color: #807F7F;
-    opacity: 0.9;
-    display: flex;
-    align-items: center;
+.borderline{
+    border-bottom: solid;
+    border-color: white;
+    opacity: 0.5;
 }
 
-.date1{
-    color: white;
-    background-color: purple;
-    width: 194px;
-    height: 24px;
-    margin-left: 5px;
+.motherbox{
     display: flex;
     align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+ 
+.games{
+    color: white;
+    background-color: purple;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamName1{
+    width: 33%;
+}
+
+.teamName2{
+    width: 33%;
+}
+
+.matchResult{
+    width: 33%;
 }
