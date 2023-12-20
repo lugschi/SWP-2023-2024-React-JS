@@ -1,13 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Person from './components/Person';
+import logo from "./logo.svg";
+import "./App.css";
+import Person from "./components/Person";
+import christmasImage from "./christmas.jpg";
+import Countdown from "./components/Countdown";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-      <Person name="Bob" description="is a Super Coder"/>
-      <Person name="Donald" description="made America great again"/>
+    <div className="Container">
+      <div class="Countdown-container">
+        <div class="Countdown">
+          <Countdown />{" "}
+        </div>
+      </div>
     </div>
   );
 }
