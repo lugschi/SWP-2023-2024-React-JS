@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
-import List from "./Components/List";
 import Button from "./Components/Button";
+import List from "./Components/List";
 
 import Card from "./Components/Card";
 function App() {
@@ -20,6 +19,7 @@ function App() {
       </div>
 
       <div className="ContainerCard">
+        <h2 className="cardTitle">Card</h2>
           <Card firstName="John" lastName="Doe" job="Architect & Engineer"/>
       </div>
 

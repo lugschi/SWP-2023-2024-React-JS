@@ -1,0 +1,79 @@
+.ContainerList{
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.list{
+  width: 150px;
+  height: 50px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.list:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button{
+  color: white;
+  width: 150px;
+  height: 50px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+
+.ContainerButton{
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.buttonStyle{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.card{
+  margin-left: 10px;
+  width: 600px;
+  height: 600px;
+  display: block;
+  align-items: center;
+  text-align: start;
+}
+
+.cardImage{
+  width: 350px;
+}
+
+.cardTitle{
+  margin-left: 10px;
+}
+
+.cardName{
+  font-weight: bold;
+}
