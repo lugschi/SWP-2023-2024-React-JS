@@ -1,11 +1,15 @@
 import React from 'react'
 
-export default function Card(name, title, imageUri) {
+export default function Card({firstname, lastname, title, imageUri}) {
   return (
-    <div>
+    <div class="container">
+        <div class="personalInfo">
+            <p class="nameStyle">{firstname}<br />{lastname}</p>
+            <p class="titleStyle">{title}</p>
+        </div>
+
         <div>
-            <h2>Hans</h2>
-            <h4>CEO</h4>
+          <img class="personImage" src={imageUri} alt=''></img>
         </div>
         <div>
             
