@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function TablePattern() {
   return (
-    <div class="leagueInfo">
+    <div>
+        <div class="leagueInfo">
             <div class="info-left">
                 <div>#</div>
                 <div class="Mannschaft">Mannschaft</div>
@@ -16,5 +17,6 @@ export default function TablePattern() {
                 <div class="stats">PKT</div>
             </div>
         </div>
+    </div>
   )
 }
