@@ -1,14 +1,10 @@
 import './App.css';
-import Header from './components/Header';
-import TablePattern from './components/TablePattern';
-import ApiData from './components/ApiData';
+import TablePage from "./page/TablePage"
 
 function App() {
   return (
     <div className="container">
-      <Header/>
-      <TablePattern/>
-      <ApiData/>        
+      <TablePage/>
     </div>
   );
 }
