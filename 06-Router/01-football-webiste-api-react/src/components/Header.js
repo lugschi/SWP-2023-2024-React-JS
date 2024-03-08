@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -23,8 +24,8 @@ export default function Header() {
     </div>
     <div class="detailSelection">
             <div class="selection">Übersicht</div>
-            <div class="selection">Tabelle</div>
-            <div class="selection">Spiele</div>
+            <div class="selection"><Link to="/" className='linkStyle'>Tabelle</Link></div>
+            <div class="selection"><Link to="Match" className='linkStyle'>Spiele</Link></div>
             <div class="selection">Statistiken</div>
             <div class="selection">Transfers</div>
         </div>
