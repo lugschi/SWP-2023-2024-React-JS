@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function ApiData() {
+export default function ApiDataTable() {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
