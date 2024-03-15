@@ -146,3 +146,49 @@ body{
 .linkStyle{
   all: unset;
 }
+
+
+.motherbox{
+  width: 750px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  border-bottom: 1px solid #DADADA;
+}
+
+.games{
+  color: #DADADA;
+  opacity: 0.8;
+  width: 700px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamName1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 33%;
+}
+
+.teamName2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 33%;
+}
+
+.matchResult{
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+.fatherbox{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
