@@ -34,6 +34,12 @@ app.post("/people", (req,res)=>{
     res.send(req.body);
 });
 
+app.put("/people/:id", (req,res)=>{
+    let id = req.params.id;
+    res.send(data[id]);
+    console.log("verändert");
+})
+
 
 app.listen(port,()=>{
     console.log("Server runing on port " + port);
