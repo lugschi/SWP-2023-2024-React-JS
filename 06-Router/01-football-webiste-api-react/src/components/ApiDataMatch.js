@@ -32,7 +32,7 @@ export default function ApiDataMatch() {
                 </div>
                 {match.matchResults.length >= 2 && (
                   <div className="matchResult">
-                    {match.matchResults[1].pointsTeam1} -{" "}
+                    {match.matchResults[1].pointsTeam1} {" - "}
                     {match.matchResults[1].pointsTeam2}
                   </div>
                 )}
