@@ -1,5 +1,6 @@
 const express = require("express")
 const bodyParser = require('body-parser');
+const db = require("./db")
 
 const app = express();
 app.use(bodyParser.urlencoded({extended:false}));
@@ -34,11 +35,12 @@ app.post("/people", (req,res)=>{
     res.send(req.body);
 });
 
-app.put("/people/:id", (req,res)=>{
-    let id = req.params.id;
-    res.send(data[id]);
-    console.log("verändert");
-})
+app.put("/people/:id", (req, res) => {
+    let id = req.params.id; 
+        data[id] = req.body;
+        res.send(data[id]);
+        console.log("verändert");    
+});
 
 
 app.listen(port,()=>{
