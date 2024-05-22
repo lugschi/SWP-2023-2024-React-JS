@@ -1,11 +1,9 @@
 const express = require("express")
-const bodyParser = require('body-parser');
 const db = require("./db")
 
 const app = express();
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.json());
 const port = 3000;
-app.use(bodyParser.json());
 
 
 const data = [
@@ -14,8 +12,13 @@ const data = [
     {name:"tom", age:16},
 ];
 
-app.get("/people", (req, res) =>{
-    res.send(data);
+app.get("/people", async (req, res) =>{
+    try {
+        let result = await db.query("select * from person");
+        console.log(result);
+    } catch (error) {
+        res.status(404).send(error.message);
+    }    
 });
 
 app.get("/people/:id", (req, res) =>{
@@ -30,10 +33,18 @@ app.delete("/people/:id", (req, res) => {
 })
 
 
-app.post("/people", (req,res)=>{
-    data.push(req.body);
-    res.send(req.body);
+app.post("/people", async (req,res)=>{
+    let person = req.body;
+    let sql = "insert into person values (id, ?, ?)";
+
+    try {
+        let result = await db.query(sql, [person.firstname, person.lastname]);
+        console.log(result);
+    } catch (error) {
+        res.status(404).send(error.message);
+    }  
 });
+
 
 app.put("/people/:id", (req, res) => {
     let id = req.params.id; 
